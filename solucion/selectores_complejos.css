@@ -1,0 +1,68 @@
+.comentarios{
+
+	color: #442A5D;
+	border: thin dotted #AC8159;
+	font-style: italic;
+	margin-left: 10%;
+}
+
+li#pregunta1, #pregunta2, #pregunta3, #pregunta4, #pregunta5, #pregunta6{
+
+	font-family: Verdana, Geneva, sans-serif;
+	color: #CF64C5
+
+
+}
+
+.negrita {
+	font-weight:bold;
+}
+
+
+li#pregunta3 span.negrita {
+	background-color: #FF9;
+}
+
+p + p {
+
+	text-decoration: underline;
+}
+
+li > a{
+	background-color: #234E54; 
+}
+
+
+.cursiva{
+	font-style: italic
+}
+
+
+[rowspan="4"] {
+	background-color: #CEA885;
+}
+
+[colspan="4"] {
+	background-color: #CEA885;
+}
+
+[colspan="3"] {
+
+	background-color: #E5F70C;
+}
+
+[rowspan="3"] {
+
+	background-color: #E5F70C;
+}
+
+
+[colspan="2"] {
+
+	background-color: #26F70C;
+}
+
+[rowspan="2"] {
+
+	background-color: #26F70C;
+}
