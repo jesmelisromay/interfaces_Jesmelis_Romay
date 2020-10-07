@@ -1,0 +1,45 @@
+p {
+	font-style: oblique;
+	font-weight: bold;
+	text-indent: 50px;
+}
+
+#consejo{
+	font-style: normal;
+	background-color: green;
+	font-size: 25px;
+	font-weight: normal;
+}
+
+#textolinea{
+	background-color: pink;
+	font-style: normal;
+	text-decoration: underline;
+	font-weight: normal;
+	font-variant: petite-caps;
+	font-size: large;
+
+}
+
+h3{
+background-color: brown;
+color: yellow;
+
+}
+
+.clase{
+	color: purple;
+	font-style: oblique;
+	font-size: 20px
+}
+
+#idparaestilo{
+	background-color: purple;
+	color: white;
+	font-size: large;
+	font-style: normal;
+	font-weight: normal;
+	text-align: justify;
+	line-height: 200%;
+	font-family: monospace;
+}
