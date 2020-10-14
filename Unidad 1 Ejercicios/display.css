@@ -1,0 +1,40 @@
+#negrita{
+	display: block;
+}
+
+.elementolinea{
+	display: inline;
+}
+
+.modolinea{
+	display: inline;
+}
+
+.estilolista {
+	display: list-item;
+	list-style-type: square;
+}
+
+.none{
+	display: none;
+}
+
+.bloqueenlinea{
+	display: inline-block;
+	height: 150px;
+	width: 150px;
+}
+.table-cell{
+	display: table-cell;
+}
+
+.desplazado{
+	position: relative;
+	right: 20px;
+	top: 20px;
+}
+
+.static{
+position: static;
+
+}
