@@ -1,0 +1,16 @@
+.fondo{
+	background-image: url(madrid.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+
+
+}
+
+.logo{
+	background-image: url(logo.png);
+	background-size: contain;
+	height: 200px;
+	width: 200px;
+	box-shadow: 10px 10px 7px;
+
+}
