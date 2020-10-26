@@ -1,0 +1,41 @@
+.flex-container {
+            background-color: greenyellow;
+            border: 1px solid black;
+            width: 50%;
+            display: inline-flex;
+            height: 100px;
+            margin: 20px;
+            flex-wrap: wrap;
+            align-content: flex-end;
+        }
+
+
+            .flex-container > div {
+                background-color: red;
+                width: 7rem;
+                height: 2rem;
+                margin: 0.7rem;
+                text-align: center;                
+                font-size: 30px;
+                margin-bottom: 0;
+
+
+               
+            }
+
+
+            #reverse{
+            	flex-direction: row-reverse;
+
+
+            }
+
+            #segundo{
+            	 height: 218px;
+            	 display: inline-flex;
+            	 flex-direction: column;
+            	 align-content: center;
+            	 flex-direction: column-reverse;
+            	 margin-top: 0;
+
+            }
