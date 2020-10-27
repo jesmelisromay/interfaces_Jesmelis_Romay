@@ -7,6 +7,9 @@
             margin: 20px;
             flex-wrap: wrap;
             align-content: flex-end;
+            justify-content: space-around;
+            margin-left: 0;
+            margin-right: 0;
         }
 
 
@@ -23,6 +26,9 @@
                
             }
 
+                
+
+
 
             #reverse{
             	flex-direction: row-reverse;
@@ -37,5 +43,14 @@
             	 align-content: center;
             	 flex-direction: column-reverse;
             	 margin-top: 0;
+                 justify-content: space-around;
+
+
+
+            }
+
+            #segundo > div:last-child{
+                margin-top: 0;
+
 
             }

@@ -1,0 +1,82 @@
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            width: 40%;
+            height: 25rem;
+            background-color: blue;
+            border: 1px solid black;
+            margin: 0;
+            justify-content: space-between;
+           
+        }
+
+
+            .flex-container > div {
+                background-color: dodgerblue;
+                width: 7rem;
+                height: 4rem;	
+                margin-left: 10px;
+                margin-right: 10px;
+                text-align: center;
+                font-size: 30px;
+                color: white;
+                border: solid;
+                border-width: 1px;
+                border-color: white;
+                margin-bottom: 0;
+                padding-top: 50px;
+                margin-top: 0;
+                
+            }
+
+                .flex-container > div:last-child {
+                    align-self: flex-end;                   
+                    margin:0;
+
+                    
+                }
+
+                .flex-container > div:nth-child(1) {
+                    margin: 0;
+                    
+                }
+
+                .flex-container > div:nth-child(4) {
+                    margin: 0;
+                    
+                }
+
+        #dos {
+            
+            margin-top:60px;
+            align-items:center;
+            justify-content: center;
+            height: 20rem;
+         
+
+           
+           
+        }
+
+
+        #dos > div{
+        	margin: 5px;
+        	margin-top: 0;
+        	margin-bottom: 30px;
+        	
+        }
+
+
+            #dos > div:last-child {
+            align-self: center;                  
+            margin-bottom: 0;
+            align-self: baseline;
+            margin-top: 55px;
+
+
+            }
+
+
+      
+
