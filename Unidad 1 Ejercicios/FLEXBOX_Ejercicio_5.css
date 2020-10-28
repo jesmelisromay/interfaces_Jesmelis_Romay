@@ -1,0 +1,53 @@
+
+
+
+        .flex-container{
+            border: 1px solid black;
+            background-color: #D0B9D0;
+            width: 80%;
+            display: flex;
+            align-items: stretch;
+            padding: 0.9em;
+            margin: 1em auto;
+            
+        }
+
+
+        #segundo{
+            background-color: #4EA8F8;
+            height: 150px;
+            
+        }
+
+         #segundo > div{
+            
+            align-items: flex-start;
+            padding: 0;
+        }
+
+
+
+
+        .flex-container > div{
+            background-color: #F3C155;
+            display: flex;
+            border: 1px solid black;
+            align-items: center;
+            padding: 8px;
+            width: 2px;
+           flex-grow: 3;  
+           
+        }
+
+       .flex-container > .tres{
+        flex-grow: 7;
+       }
+
+       .flex-container > .cuatro{
+        flex-grow: 10;
+       }
+
+       #primero div:nth-child(1) {
+        order: 4;
+       }
+
