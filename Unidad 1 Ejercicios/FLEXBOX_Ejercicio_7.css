@@ -1,0 +1,153 @@
+
+
+        .contenedor {
+            width: 90%;
+            background-color: whitesmoke;
+            display: flex;
+            margin: 1px auto;
+            flex-wrap: wrap;
+        }
+
+        .barra_arriba, .barra_abajo {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            background-color: darkblue;
+            align-content: flex-start;
+            color: white;
+            font-size: x-large;
+            font-weight:bold;
+            padding: 5px; 
+            justify-content: space-between; 
+            align-items:center;  
+
+                    }
+
+         .barra_abajo{
+            
+            align-content: flex-end;
+           
+        }
+
+        .menu, .FBTW{
+            display: flex;
+            background-color: red;
+            border: 1px solid black;
+            padding: 5px;
+
+        }
+
+        .FBTW {
+            
+            background-color: orange;
+           
+        }
+
+            .menu > div, .FBTW > p{
+                display: flex;
+                margin: 3px;
+                height: 30px;
+                width: 110px;               
+               justify-content: center;
+               align-items: center;
+            }
+
+
+            .FBTW > p{
+            
+            width: 80px; 
+           
+        }
+
+        
+
+       
+
+
+        .parrafos {
+            display: flex;
+            width: 60%;
+            height: 500px;
+            font-size: 20px;
+           
+          
+        }
+
+            .parrafos > p {
+                width: 45%;
+                height: 200px;
+                margin: 20px;
+                padding: 5px;
+                
+            }
+
+            span{
+                font-size:22px;
+                font-weight:bold;
+            }
+
+
+
+        .lateral_derecho {
+            width: 40%;
+            height: 500px;
+            background-color: #E67E22;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cuadrados1, .cuadrados2 {
+            display: flex;
+            width: 400px;
+            height: 200px;
+            margin: 20px;
+            border: 1px solid; 
+            flex-direction:column;
+            flex-wrap:wrap; 
+            
+              
+                  
+                    
+        }
+
+
+        
+
+
+            .cuadrados1 > div, .cuadrados2 > div {
+                height: 100PX;
+                width: 200px;                
+                background-color: #CA6F1E;
+              
+
+            }
+
+
+                .cuadrados1 > div:nth-child(1), .cuadrados1 > div:nth-child(2), .cuadrados2 > div:nth-child(3), .cuadrados2 > div:nth-child(4) {
+                    background-color: #C0392B;
+                }
+
+
+                .cuadrados1 > div:nth-child(2) {
+                   order: 3;
+                }
+                
+        
+                .cuadrados2 > div:nth-child(1) {
+                    order: 4;
+                }
+
+                 
+
+               
+               
+
+
+                
+               
+       
+               
+
+
