@@ -1,0 +1,69 @@
+
+		
+		.contenedor{
+			height: 80%;
+			width: 370px;
+			border: solid;
+			margin: auto;
+			text-align: center;
+
+
+
+			
+			
+		}
+
+		.cajas{
+			border: solid;
+			width: 100px;
+			height: 80px;
+			margin: 5px;
+			display: inline-block;
+			text-align: left;
+			 
+			
+		}
+
+
+		.cajas:nth-last-child(-n+3){
+			background-color: blue;
+		}
+
+		.cajas:nth-last-child(1n+4){
+			background-color: green;
+		}
+
+		
+
+		.cajas:nth-child(-n+3){
+			background-color: white;
+		}
+
+		.cajas:nth-child(2n+2){
+			visibility: hidden;
+		}
+
+		.cajas:nth-child(4){
+			display: none;
+		}
+
+
+		.cajas:nth-child(8){
+			display: none;
+
+		}
+
+		
+
+		
+
+
+
+		
+
+				
+		
+
+
+
+
