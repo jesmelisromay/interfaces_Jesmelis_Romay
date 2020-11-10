@@ -4,18 +4,18 @@
 	background-color: #F9DDC3;
 }
 
-#capa2 a:hover{
+#capa2:hover a{
 	background-color: #9786A8;
 }
 
 
 
-#capa3 a#google:hover{ 
+#capa3 #google:hover{ 
 	background-color: #CECA85;
 }
 
 
-#capa4 a#madrid:hover{ 
+#capa4:hover #madrid {
 	background-color: #F9F6C3;
 }
 
