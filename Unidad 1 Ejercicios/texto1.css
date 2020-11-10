@@ -1,23 +1,24 @@
-p {
+p:first-of-type {
 	font-style: oblique;
 	font-weight: bold;
 	text-indent: 50px;
 }
 
-#consejo{
-	font-style: normal;
+#consejo {
+	font-family: Tahoma, Geneva, sans-serif;
 	background-color: green;
-	font-size: 25px;
-	font-weight: normal;
+	font-weight: bold;
+	text-align: justify;
 }
 
 #textolinea{
 	background-color: pink;
 	font-style: normal;
 	text-decoration: underline;
-	font-weight: normal;
 	font-variant: petite-caps;
 	font-size: large;
+	text-transform:capitalize;
+	
 
 }
 
@@ -27,19 +28,19 @@ color: yellow;
 
 }
 
-.clase{
+.clase {
 	color: purple;
 	font-style: oblique;
-	font-size: 20px
+	font-size: 20px;
+	font-weight: bold;
 }
 
-#idparaestilo{
+#idparaestilo {
 	background-color: purple;
 	color: white;
 	font-size: large;
-	font-style: normal;
-	font-weight: normal;
 	text-align: justify;
-	line-height: 200%;
 	font-family: monospace;
+	letter-spacing: 5px;
+	word-spacing: 0.7em;
 }
