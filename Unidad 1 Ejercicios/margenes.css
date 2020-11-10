@@ -12,6 +12,8 @@
 			background-color: #789498;
 			height: 100px;
 			width: 100px;
+			margin:auto;
+			text-align:center;
 
 			
 		}
@@ -20,6 +22,7 @@
 			height: 200px;
 			width: 100px;
 			text-align: center;
+			margin:auto;
 		}
 		.interior {
 			background-color: #755E8B;
