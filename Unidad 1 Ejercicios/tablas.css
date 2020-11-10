@@ -1,9 +1,5 @@
-table{
-	width: 50%;
-}
 
 table, th, td {
-	text-align: center;
 	border: #333 solid;
 	border-collapse: collapse;
 	
@@ -13,6 +9,10 @@ tbody th{
 	background-color: #E6F3FF;
 	font-family: arial;
 
+}
+ tr {
+	height: 4em;
+	vertical-align: bottom;
 }
 
 .cabecera{
@@ -31,28 +31,28 @@ background-color: #FFFFCC;
 
 .euro{
 	background-image: url(imagenes/euro.png);
-	background-position: left;
+	background-position: left top;
 	background-repeat: no-repeat;
 	background-origin: border-box;
 }
 
-.dolar{
+.dolar {
 	background-image: url(imagenes/dolar.png);
-	background-position: left;
+	background-position: left top;
 	background-repeat: no-repeat;
 	background-origin: border-box;
 }
 
-.libra{
+.libra {
 	background-image: url(imagenes/libra.png);
-	background-position: left;
+	background-position: left top;
 	background-repeat: no-repeat;
 	background-origin: border-box;
 }
 
-.yen{
+.yen {
 	background-image: url(imagenes/yen.png);
-	background-position: left;
+	background-position: left top;
 	background-repeat: no-repeat;
 	background-origin: border-box;
 }
