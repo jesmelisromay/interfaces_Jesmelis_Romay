@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        #contenedor {
+            height: 25rem;
+            display: grid;
+            grid-template-columns: 2fr 4fr 2fr 4fr;
+            grid-template-rows: repeat(3, 4rem);
+            grid-gap: 0.5em;
+            grid-auto-rows:8rem;
+           
+           
+        }
+
+        div#contenedor div {
+            border: 1px solid;
+            background-color:gray;
+            font-size:150%;
+
+        }
+
+
+            div#contenedor div:nth-child(even) {
+                background-color: #ffd800;
+            }
+
+    </style>
+</head>
+<body>
+
+    <div id="contenedor">
+
+        <div> 1  </div>
+        <div> Texto  </div>
+        <div> 2  </div>
+        <div> Texto  </div>
+
+
+        <div> 3  </div>
+        <div> Texto  </div>
+        <div> 4  </div>
+        <div> Texto  </div>
+        <div> 5  </div>
+        <div> Texto  </div>
+
+
+        <div> 6  </div>
+        <div> Texto  </div>
+        <div> 7  </div>
+        <div> Texto  </div>
+        <div> 8 </div>
+        <div> Texto  </div>
+
+
+        <div> 9  </div>
+        <div> Texto  </div>
+        <div> 10  </div>
+        <div> Texto  </div>
+
+
+    </div>
+
+</body>
+</html>
