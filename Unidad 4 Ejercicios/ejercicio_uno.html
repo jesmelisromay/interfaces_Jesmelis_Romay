@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script>
+
+        /* Realiza una animación que muestre cada uno de los textos de la imagen siguiente,
+         * cada uno con un retraso de 1 segundo respecto al anterior. Al pinchar en cualquiera
+         * de los textos se vuelve a reproducir la animación desde cero ocultando los textos
+         * que se hayan mostrado previamente. Cuando ha finalizado la secuencia, se puede volver
+         * a reproducir haciendo click igualmente en cada uno de los textos.*/
+
+        let id = 0;
+        let id2 = 0;
+        
+
+        function start() {     
+
+            if (id != 4) {
+                setTimeout(() => start(), 500);
+            }
+           
+            if (id == 4) {
+                    id = 0;
+                } else {
+                    id++;                    
+                }
+            document.getElementById(id).style.visibility = "visible";              
+       
+
+        }
+
+
+       
+        function borrar() {           
+
+            if (id2 > 3) {
+                id2 = 0;
+            } else {
+                id2++;
+            }
+
+            document.getElementById(id2).style.visibility = "hidden";  
+            
+            setTimeout(() => borrar(), 5);              
+            
+        }
+
+
+
+
+        function detener() {            
+            borrar();   
+
+            start();
+        } 
+
+        setTimeout(() => start(), 500);          
+        
+
+
+
+    </script>
+
+
+    <style>
+
+        * {
+            margin: 20px;
+        }
+
+        div {
+            visibility: hidden;
+            height:20px;
+            width:900px;
+        }
+
+        button {
+            background-color: white;
+            height: 200px;
+            width: 1000px;
+            border:none;
+            padding:0;
+
+        }
+      
+    </style>
+
+
+
+
+
+
+
+</head>
+<body>
+
+   
+
+    <button onclick="detener()">
+
+        <div class="div" id="1" style="background-color: yellow"> Primero </div>
+        <div class="div" id="2" style="background-color: mediumpurple"> Segundo </div>
+        <div class="div" id="3" style="background-color: maroon"> Tercero </div>
+        <div class="div" id="4" style="background-color: forestgreen"> Cuarto </div>
+
+    </button>
+
+
+
+</body>
+
+
+
+</html>
