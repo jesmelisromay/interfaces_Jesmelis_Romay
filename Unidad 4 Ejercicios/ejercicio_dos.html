@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <p>Numero de segundos </p>
+    <input type="number" min="0" id="valor" required="required" /> <br /> <br />
+
+    <div id="contador">(Contador)</div><br /> <br />
+
+    <button id="inicio" onclick="Start()"> Iniciar </button>
+    <button id="parar" onclick="Stop()"> Parar </button>
+
+
+
+    <script>
+
+        var id;
+        var i;
+
+        function Start() {
+            i = document.getElementById("valor").value;
+
+            if (i < 0) {
+
+                alert("el numero debe ser mayor que 0");
+            } else {  
+                
+                document.getElementById("contador").style.color = "black";
+
+            function forr() {
+                if (i < 1) {                    
+                    document.getElementById("contador").style.color = "red";
+                    clearInterval(id);
+                } else {
+                    i--;
+                    document.getElementById("contador").innerHTML = i;
+                }
+              }
+
+                id = setInterval(forr, 1000);  
+
+            }
+            
+        }
+
+        function Stop() {
+            clearInterval(id);
+            document.getElementById("valor").value = i;
+            
+        }
+
+    </script>
+
+</body>
+</html>
