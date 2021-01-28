@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+  <title></title>
+
+  
+</head>
+<body>	
+	
+    <span is="wc-blink" colorBase="red" colorAlternativo ="yellow" intervalo=2000>Hola Soy El Texto a Cambiar <br> </span>
+    
+    <p>Yo no Cambio</p>
+
+    
+    
+    <span is="wc-blink" colorAlternativo ="blue">Hola Soy El Texto a Cambiar Numero Dos <br> </span>
+
+     <p>
+       
+     </p>
+    
+     <span is="wc-blink" colorBase="inherit" colorAlternativo ="transparent" intervalo=1000> Hola Soy El Texto a Cambiar Numero Tres  <br> </span>
+
+
+	<script>
+		class wcblink extends HTMLSpanElement {
+
+			constructor() {
+                super();
+                this.x;                               
+              
+                this.colorBase;
+                this.colorAlternativo;
+                this.intervalo;
+           
+                this.style.color= this.colorBase;            
+                
+            }
+
+
+            connectedCallback(){                  
+             
+               
+                setInterval(() => {this.cambio()}, this.intervalo);    
+            }
+
+
+            cambio(){ 
+
+                   if(this.style.color == this.colorAlternativo)
+                    this.style.color= this.colorBase;
+                    else
+                    this.style.color=this.colorAlternativo;     
+            }
+
+
+
+           
+
+            
+
+    get colorBase() {
+		return this.getAttribute('colorBase');		
+	}
+	
+	set colorBase(newVal) {;
+		this.setAttribute('colorBase', newVal);
+    }
+    
+    get colorAlternativo() {
+		return this.getAttribute('colorAlternativo');		
+	}
+	
+	set colorAlternativo(newVal) {;
+		this.setAttribute('colorAlternativo', newVal);
+    }
+    
+    get intervalo() {
+		return this.getAttribute('intervalo');		
+	}
+	
+	set intervalo(newVal) {;
+		this.setAttribute('intervalo', newVal);
+	}
+
+
+
+
+		}
+		
+		customElements.define('wc-blink', wcblink, {extends: 'span'});
+	</script>
+</body>
+</html>
