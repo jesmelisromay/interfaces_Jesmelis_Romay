@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="utf-8" />
+    <title></title>  
+    <style>
+        .elem {
+            height: 100px;
+            width: 120px;
+            background-color: red;
+            border: solid black;
+            text-align: center;
+            padding: 10px;    
+            opacity:-1;      
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+    <div class="elem">Elemento</div> <br /><br />
+
+    <button class="mostrar">ver</button>
+    <button class="ocultar">ocultar</button>
+
+
+    <script type="text/javascript">
+
+
+
+
+function fadeIn(Elemento, duracion){
+    var clase="."+Elemento;
+    var elem = document.querySelector(clase);
+    elem.style.transition="opacity "+duracion;
+    elem.style.opacity="1";
+
+}
+
+function fadeOut(Elemento, duracion){
+    var clase="."+Elemento;
+    var elem = document.querySelector(clase);
+    elem.style.transition="opacity "+duracion;
+    elem.style.opacity="-1";
+
+}
+       
+     
+
+            
+
+               document.querySelector(".mostrar").addEventListener("click", () => {       
+                fadeIn("elem","20s");    
+                
+});
+                
+               
+            
+
+            document.querySelector(".ocultar").addEventListener("click", () => {               
+                fadeOut("elem", "20s");
+});
+
+
+
+        
+        
+       
+    </script>
+
+</body>
+</html>
